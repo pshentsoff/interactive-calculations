@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="component" version="3.1.0" method="upgrade">
+    <name>COM_INTERCALC</name>
+    <creationDate>31/10/2013</creationDate>
+    <author>pshentsoff</author>
+    <authorEmail>pshentsoff@gmail.com</authorEmail>
+    <authorUrl>http://pshentsoff.ru</authorUrl>
+    <copyright>2013, Vadim Pshentsov. All Rights Reserved.</copyright>
+    <license>http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0</license>
+    <version>0.0.1</version>
+    <description>COM_INTERCALC_DESCRIPTION</description>
+
+    <install>
+
+    </install>
+
+    <scriptfile>install.php</scriptfile>
+
+    <update>
+
+    </update>
+
+    <uninstall>
+
+    </uninstall>
+
+    <languages folder="site">
+        <language tag="en-GB">languages/en-GB/en-GB.com_intercalc.ini</language>
+        <language tag="ru-RU">languages/ru-RU/ru-RU.com_intercalc.ini</language>
+    </languages>
+
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>languages</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <filename>index.html</filename>
+        <filename>intercalc.php</filename>
+        <filename>router.php</filename>
+    </files>
+
+    <administration>
+
+        <menu link="option=com_intercalc" img="components/com_intercalc/assets/images/intercalc_icon.png">COM_INTERCALC</menu>
+        <submenu>
+            <menu view="settings" img="components/com_intercalc/assets/images/intercalc_icon.png" alt="INTERCALC/Settings">COM_INTERCALC_SETTINGS</menu>
+        </submenu>
+
+        <files folder="admin">
+            <folder>controllers</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <filename>index.html</filename>
+            <filename>intercalc.php</filename>
+        </files>
+
+        <languages folder="site">
+            <language tag="en-GB">languages/en-GB/en-GB.com_intercalc.ini</language>
+            <language tag="en-GB">languages/en-GB/en-GB.com_intercalc.sys.ini</language>
+            <language tag="ru-RU">languages/ru-RU/ru-RU.com_intercalc.ini</language>
+            <language tag="ru-RU">languages/ru-RU/ru-RU.com_intercalc.sys.ini</language>
+        </languages>
+
+    </administration>
+
+</extension>
