@@ -23,6 +23,13 @@ class IntercalcViewsCalcHtml extends JViewHtml {
 
     function render() {
 
+        //@todo this loaders must be in helper, temporary placed here
+        JHtml::stylesheet('components/com_intercalc/assets/css/styles.css');
+        //load jquery framevork in noConflict mode
+        JHtml::_('jquery.framework', true);
+        //load self scripts
+        JHtml::script('components/com_intercalc/assets/js/intercalc.js', false);
+
         return parent::render();
 
     }

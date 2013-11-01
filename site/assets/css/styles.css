@@ -1,0 +1,85 @@
+/*
+    Interactive Calculations component CSS
+*/
+
+.intercalc-main {
+    color:#ffffff;
+    overflow:hidden;
+    width:900px;
+    height:480px;
+    background:#bcbaba;
+}
+.intercalc-main div#intercalc_menu {
+    width:900px;
+    background:#e80033;
+    height:50px;
+}
+.intercalc-main div#intercalc_menu div {
+    cursor: pointer;
+    cursor:hand;
+    float:left;
+    padding:0px 20px;
+    line-height:50px;
+    height:50px;
+    border-right:1px solid #ffffff;
+    color:white;
+}
+.intercalc-main div#intercalc_menu div.selected {
+    cursor: default;
+    background:#bcbaba;
+}
+div#intercalc-left {
+    width:300px;
+}
+div#intercalc-left>div	{
+    z-index:1000;
+    position:relative;
+    float:left;
+    height:90px;
+    padding:15px 20px 15px 20px;
+    line-height:16px;
+    color:#ffffff;
+    margin-top:310px;
+    background:#e80033;
+}
+div#intercalc-left>div h2	{
+    color:#ffffff;
+}
+div#intercalc-left>img	{
+    margin-top:-410px;
+    position:relative;
+}
+
+div#intercalc-right {
+    float:right;
+    width:600px;
+    height:415px;
+}
+div#intercalc-right>h2	{
+    margin-top:20px;
+    color:#ffffff;
+    text-align:center;
+    font-size:20pt;
+}
+div#intercalc-right>h3	{
+    color:#ffffff;
+    text-align:center;
+}
+div#intercalc-right>p	{
+    color:#ffffff;
+    text-align:center;
+}
+div#intercalc-right u	{
+    color:#e80033;
+}
+div#intercalc-right img {
+    display:block;
+    margin:auto;
+}
+div#intercalc-right button	{
+    clear:both;
+    margin:370px 0px 0px 240px;
+    position:absolute;
+    float:none;
+    width:120px;
+}
