@@ -2,19 +2,16 @@
     Interactive Calculations component CSS
 */
 
-.intercalc-main {
-    color:#ffffff;
+#intercalc-main {
     overflow:hidden;
     width:900px;
-    height:480px;
-    background:#bcbaba;
+    height:auto;
 }
-.intercalc-main div#intercalc_menu {
+#intercalc-main div#intercalc_menu {
     width:900px;
-    background:#e80033;
     height:50px;
 }
-.intercalc-main div#intercalc_menu div {
+#intercalc-main div#intercalc_menu div {
     cursor: pointer;
     cursor:hand;
     float:left;
@@ -22,64 +19,89 @@
     line-height:50px;
     height:50px;
     border-right:1px solid #ffffff;
-    color:white;
 }
-.intercalc-main div#intercalc_menu div.selected {
+#intercalc-main div#intercalc_menu div.selected {
     cursor: default;
-    background:#bcbaba;
 }
-div#intercalc-left {
+
+.intercalc-property {
+    width: 900px;
+    display: block;
+}
+
+.intercalc-left {
+    float:left;
     width:300px;
+    height:auto;
 }
-div#intercalc-left>div	{
+.intercalc-left>h2	{
+    margin-top:20px;
+    text-align:left;
+}
+.intercalc-left>h3	{
+    text-align:left;
+}
+.intercalc-left>p	{
+    text-align:left;
+}
+.intercalc-left u	{
+}
+.intercalc-left img {
+    display:block;
+    margin:auto;
+}
+.intercalc-left button	{
+    clear:both;
+    /*margin:370px 0px 0px 240px;*/
+    /*position:absolute;*/
+    /*float:none;*/
+    width:120px;
+}
+
+.intercalc-right {
+    width:600px;
+}
+.intercalc-right>div	{
     z-index:1000;
     position:relative;
-    float:left;
-    height:90px;
+    float:right;
+    /*height:90px;*/
     padding:15px 20px 15px 20px;
     line-height:16px;
-    color:#ffffff;
-    margin-top:310px;
-    background:#e80033;
+    /*margin-top:310px;*/
 }
-div#intercalc-left>div h2	{
-    color:#ffffff;
+.intercalc-right>div h2	{
 }
-div#intercalc-left>img	{
+.intercalc-right>img	{
     margin-top:-410px;
     position:relative;
 }
 
-div#intercalc-right {
-    float:right;
-    width:600px;
-    height:415px;
-}
-div#intercalc-right>h2	{
-    margin-top:20px;
-    color:#ffffff;
-    text-align:center;
-    font-size:20pt;
-}
-div#intercalc-right>h3	{
-    color:#ffffff;
-    text-align:center;
-}
-div#intercalc-right>p	{
-    color:#ffffff;
-    text-align:center;
-}
-div#intercalc-right u	{
-    color:#e80033;
-}
-div#intercalc-right img {
-    display:block;
-    margin:auto;
-}
-div#intercalc-right button	{
-    clear:both;
-    margin:370px 0px 0px 240px;
+.radiobox1 {
     position:absolute;
-    float:none;
-    width:120px;
+    width:150px;
+    height:150px;
+}
+.radiobox1 input {
+    width:150px;
+    height:150px;
+}
+.radiobox1 span	{
+    width:150px;
+    height:150px;
+    background: url(images/radio.png) no-repeat;
+}
+.radiobox2 {
+    position:absolute;
+    width:100px;
+    height:100px;
+}
+.radiobox2 input {
+    width:100px;
+    height:100px;
+}
+.radiobox2 span	{
+    width:100px;
+    height:100px;
+    background: url(images/radio-small.png) no-repeat;
 }

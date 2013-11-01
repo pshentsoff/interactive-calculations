@@ -8,7 +8,7 @@
     <authorUrl>http://pshentsoff.ru</authorUrl>
     <copyright>2013, Vadim Pshentsov. All Rights Reserved.</copyright>
     <license>http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0</license>
-    <version>0.0.13-dev</version>
+    <version>0.0.17-dev</version>
     <description>COM_INTERCALC_DESCRIPTION</description>
 
     <install>

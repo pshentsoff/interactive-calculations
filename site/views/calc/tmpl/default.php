@@ -20,34 +20,70 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 ?>
 
-<div class="intercalc-main">
-    <div id="intercalc_menu">
-        <div class="selected" return="0">1. Дом | квартира</div>
-        <div return="1">2. Тип дома</div>
-        <div return="2">3. Размеры комнаты</div>
-        <div return="3" style="border:0px; line-height:62px; font-size:18pt;">*</div>
-    </div>
-    <div style="display: block;" id="intercalc-right">
-        <h3>Вам для дома или квартиры?</h3>
-        <label title="дом" class="radiobox1" style="margin:50px 0px 0px 140px;">
-            <input name="M" value="AL" type="radio">
-            <span></span>
-        </label>
-        <label title="квартира" class="radiobox1" style="margin:50px 0px 0px 320px;">
-            <input name="M" value="BM" type="radio">
-            <span></span>
-        </label>
-        <img src="page1.png">
+<div id="intercalc-main">
+
+    <div class="intercalc-property"  id="house-kind-block">
+        <div class="intercalc-left" style="display: block;">
+            <h3>Вам для дома или квартиры?</h3>
+            <label title="дом" >
+                <input name="M" value="AL" type="radio">
+            </label>
+            <label title="квартира">
+                <input name="M" value="BM" type="radio">
+            </label>
+        </div>
+        <div class="intercalc-right">
+
+        </div>
     </div>
 
-    <div style="margin-left: 0px; display: block;" id="intercalc-left">
-        <div>
-            <p>
-                Алюминиевый<br>радиатор
-                <h2>AL-350</h2>(5 секций)
-            </p>
+    <div class="intercalc-property" id="room-space-block">
+        <div class="intercalc-left">
+            <h3>Площадь помещения</h3>
+            <label title="Пожалуйста, укажите площадь помещения">
+                <input type="text" name="room_space" />
+            </label>
         </div>
-        <img src="AL-350.png">
+    </div>
+
+    <div class="intercalc-property" id="room-height-block">
+        <div class="intercalc-left">
+            <h3>Высота потолка</h3>
+            <label title="Пожалуйста, укажите высоту потолка">
+                <input type="text" name="room_height" />
+            </label>
+        </div>
+    </div>
+
+    <div class="intercalc-property" id="windowsill-height-block">
+        <div class="intercalc-left">
+            <h3>Высота подоконника</h3>
+            <label title="Пожалуйста, укажите высоту подоконника">
+                <select name="windowsill_height">
+                    <option value="less700mm">меньше 700мм</option>
+                    <option value="more700mm">больше 700 мм</option>
+                </select>
+            </label>
+        </div>
+    </div>
+
+    <div class="intercalc-property" id="options-block">
+        <div class="intercalc-left" style="display: block;">
+            <h3>Особенности</h3>
+            <label title="В комнате 2 окна">
+                <input name="two_windows" type="checkbox">
+            </label>
+            <label title="Угловая комната">
+                <input name="corner_room" type="checkbox">
+            </label>
+        </div>
+    </div>
+
+    <div class="intercalc-property">
+        <div class="intercalc-left">
+            <button id="calculate" value="">Рассчитать</button>
+        </div>
     </div>
 
 </div>
+
