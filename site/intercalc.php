@@ -17,6 +17,25 @@
  * @created     31.10.13
  */
 
-?>
+defined( '_JEXEC' ) or die( 'Restricted access' );
 
-Interactive Calculations!
+//sessions
+jimport( 'joomla.session.session' );
+
+//load classes
+JLoader::registerPrefix('Intercalc', JPATH_COMPONENT);
+
+//application
+$app = JFactory::getApplication();
+
+// Require specific controller if requested
+if($controller = $app->input->get('controller','default')) {
+    require_once (JPATH_COMPONENT.'/controllers/'.$controller.'.php');
+}
+
+// Create the controller
+$classname = 'IntercalcController'.$controller;
+$controller = new $classname();
+
+// Perform the Request task
+$controller->execute();

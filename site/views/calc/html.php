@@ -1,6 +1,6 @@
 <?php
 /**
- * @file        intercalc.php
+ * @file        html.php
  * @description
  *
  * PHP Version  5.3.13
@@ -14,11 +14,16 @@
  * @link        http://pshentsoff.ru Author's homepage
  * @link        http://blog.pshentsoff.ru Author's blog
  *
- * @created     31.10.13
+ * @created     01.11.13
  */
 
-defined('_JEXEC') or die;
+defined( '_JEXEC' ) or die( 'Restricted access' );
 
-?>
+class IntercalcViewsCalcHtml extends JViewHtml {
 
-Interactive Calculations! Administration.
+    function render() {
+
+        return parent::render();
+
+    }
+}
